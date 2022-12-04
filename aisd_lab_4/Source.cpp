@@ -19,6 +19,7 @@ int main()
     tree->PrintTreeInOrder(node);
     cout << endl;
 
+    cout << "Поиск 31 в дереве: ";
     bool b = tree->Search(node, 31);
     if (b)
         cout << "Найдено";
@@ -31,10 +32,10 @@ int main()
     cout << "Максимум : " << tree->FindMax(node);
     cout << endl;
 
-    cout << "Следующий элемент : " << tree->Successor(node, 7);
+    cout << "Следующий элемент (7): " << tree->Successor(node, 7);
     cout << endl;
 
-    cout << "Предыдущий элемент : " << tree->Predecessor(node, 12);
+    cout << "Предыдущий элемент (12): " << tree->Predecessor(node, 12);
     cout << endl;
 
     cout << "Удаление элемента '15': " << endl;
